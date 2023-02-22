@@ -5,6 +5,7 @@ const inputValidationHandler = (event) => {
 		event.target.classList.remove("invalid");
 		return event.target.classList.add("valid");
 	}
+	event.target.classList.remove("valid");
 	event.target.classList.add("invalid");
 };
 

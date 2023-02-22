@@ -15,9 +15,11 @@ function onFormSubmit(event) {
 		password,
 	};
 
-	email === "" || password === ""
-		? alert("Fill all fields to continue.")
-		: console.log(userData);
-
-	event.currentTarget.reset();
+	if (email === "" || password === "") {
+		alert("Fill all fields to continue.");
+		return;
+	} else {
+		console.log(userData);
+		event.currentTarget.reset();
+	}
 }
