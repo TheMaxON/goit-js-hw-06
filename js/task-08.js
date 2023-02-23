@@ -21,5 +21,6 @@ function onFormSubmit(event) {
 	} else {
 		console.log(userData);
 		event.currentTarget.reset();
+		return;
 	}
 }
